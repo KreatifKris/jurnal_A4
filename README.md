@@ -1,3 +1,4 @@
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,46 +55,7 @@
         }
         .social-btn-gradient:hover {
             background: linear-gradient(135deg, #2563eb 0%, #dc2626 100%);
-        }
-
-        /* Styles for moving logos at the upper side */
-        .moving-logos {
-            background-color: #f8fafc;
-            border-bottom: 1px solid #e2e8f0;
-            overflow: hidden;
-            white-space: nowrap;
-            padding: 0.5rem 0;
-        }
-        .logos-container {
-            display: inline-flex;
-            animation: scroll-logos 15s linear infinite;
-            gap: 2rem;
-        }
-        .logo-item {
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 120px;
-        }
-        .logo-item img {
-            height: 50px;
-            width: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        @keyframes scroll-logos {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-        /* Pause animation on hover for better UX */
-        .moving-logos:hover .logos-container {
-            animation-play-state: paused;
-        }
+        
     </style>
 </head>
 <body class="bg-gray-100">
@@ -131,36 +93,6 @@
         </div>
     </header>
 
-    <!-- Moving Logos Section (Added: 3 logos moving horizontally at the upper side, just below header) -->
-    <div class="moving-logos">
-        <div class="container mx-auto px-4">
-            <div class="logos-container">
-                <!-- Logo 1: School Logo -->
-                <div class="logo-item">
-                    <img src="logo.png" alt="Logo SMA Petra 4 Sidoarjo">
-                </div>
-                <!-- Logo 2: Sekolah Logo -->
-                <div class="logo-item">
-                    <img src="sekolah.png" alt="Sekolah Logo">
-                </div>
-                <!-- Logo 3: Placeholder or another logo (you can replace with a third image path, e.g., "partner.png") -->
-                <div class="logo-item">
-                    <img src="logo.png" alt="Partner Logo"> <!-- Using logo.png as placeholder; replace with actual third logo -->
-                </div>
-                <!-- Duplicate for seamless loop -->
-                <div class="logo-item">
-                    <img src="logo.png" alt="Logo SMA Petra 4 Sidoarjo">
-                </div>
-                <div class="logo-item">
-                    <img src="sekolah.png" alt="Sekolah Logo">
-                </div>
-                <div class="logo-item">
-                    <img src="logo.png" alt="Partner Logo">
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Breaking News Banner -->
     <div class="breaking-news bg-red-500 text-white py-2">
         <div class="container mx-auto px-4">
@@ -195,7 +127,7 @@
                 <!-- Catatan: Ganti LIVE_STREAM_ID dengan ID video live YouTube Anda (dari URL seperti https://www.youtube.com/watch?v=LIVE_STREAM_ID). Untuk live stream, gunakan fitur embed YouTube Live. -->
             </div>
             <div class="mt-6 text-center">
-                <p class="text-gray-600 text-sm">Berkolaborasi dengan SMA Petra 4 & Digicom Trapat</p>
+                <p class="text-gray-600 text-sm">Tidak ada siaran saat ini? Cek jadwal acara di Instagram kami!</p>
                 <a href="https://www.instagram.com/digicomtrapat/" class="inline-block mt-4 bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition duration-300">
                     <i class="fab fa-instagram mr-2"></i>Lihat Jadwal
                 </a>
@@ -301,4 +233,103 @@
                         Sungguh, seporsi mi ayam ala Jifon bukan hanya soal rasa, tetapi juga kisah tentang tradisi, inovasi, dan identitas budaya Indonesia.
                         </p>
                         <div class="flex items-center justify-between mt-4">
-                            <span class="text-sm text-gray-500">15 Oktober 2025
+                            <span class="text-sm text-gray-500">15 Oktober 2025</span>
+                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
+                                →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 3: ELS Makeup (Diperbaiki struktur) -->
+                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="relative">
+                        <img src="Makeup.png" alt="Beauty and makeup class with students learning skincare" class="w-full h-48 object-cover">
+                        <span class="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS MAKEUP</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">EKSKUL MAKEUP: Sekolah, Skincare, Self-Confidence!</h3>
+                        <p class="text-gray-600 mb-4 text-sm">SMA Kristen Petra 4 Sidoarjo punya cara unik mendukung kreativitas siswanya. Tahun ajaran 2025 ini, sekolah membuka ekskul Make-Up yang diikuti 20 siswi. Dibimbing langsung oleh Miss Jenna (@jenna_mua_sulam), kegiatan ini tidak hanya mengajarkan teknik make-up, tetapi juga cara merawat kulit, mengenali jenis kulit wajah, serta memilih skincare yang aman.
+
+Celine, salah satu peserta, mengaku mendapat banyak ilmu baru. “Dulu aku sering asal cuci muka. Tapi setelah ikut ekskul ini, aku tahu step by step mencuci wajah yang benar, dan cara pakai skincare supaya hasilnya maksimal,” ujarnya.
+
+Keseruan tidak berhenti di kelas. Miss Jenna dan para siswi sudah menyiapkan proyek untuk ikut lomba make-up. Vanessa, Erlina, dan Belinda jadi beberapa nama yang siap turun. “Lomba itu bukan soal menang kalah, tapi kesempatan belajar,” kata Miss Jenna. Suasana belajar yang seru membuat ekskul Make-Up ini jadi ruang baru bagi siswi untuk merawat diri, menambah pengalaman, dan tumbuh lebih percaya diri.
+
+Percaya Diri Mulai Dari Sini!
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm text-gray-500">9 September 2025</span>
+                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
+                                →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="relative">
+                        <img src="jepang.png" alt="Japanese language class" class="w-full h-48 object-cover">
+                        <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS BAHASA JEPANG</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-3 text-gray-800">Bahasa Jepang sebagai Jembatan Masa Depan</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Bahasa Jepang merupakan salah satu bahasa asing yang memiliki daya tarik besar bagi generasi muda di berbagai belahan dunia. Nathan dan Deven punya mimpi besar ketika memilih ikut ELS Bahasa Jepang. Mereka ingin bisa bercakap lancar, menikmati drama tanpa subtitle, dan suatu hari bekerja di Jepang. Meski aksara kanji terasa sulit, semangat mereka tak pernah padam. Nathan: “Setuju! Bahasa bukanlah penghalang, tapi pintu ke dunia baru.”</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-sm text-gray-500">9 September 2025</span>
+                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment Section Placeholder -->
+    <section id="comments" class="py-16 bg-purple-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Tinggalkan Komentar</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Nama Anda">
+                    </div>
+                    <div class="mb-4">
+                        <label for="comment" class="block text-gray-700 font-medium mb-2">Komentar</label>
+                        <textarea id="comment" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Tulis komentar Anda di sini..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-purple-700 transition duration-300">Kirim Komentar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Ikuti Kami</h2>
+            <p class="text-gray-400 mb-8">Terhubung dengan kami melalui media sosial.</p>
+            <div class="flex justify-center items-center space-x-6">
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/yourphonenumber" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
+                    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                    <span class="font-medium">WhatsApp</span>
+                </a>
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/digicomtrapat/" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
+                    <i class="fab fa-instagram text-2xl mr-2"></i>
+                    <span class="font-medium">Instagram</span>
+                </a>
+                <!-- TikTok Link -->
+                <a href="https://tiktok.com/@yourprofile" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
+                    <i class="fab fa-tiktok text-2xl mr-2"></i>
+                    <span class="font-medium">TikTok</span>
+                </a>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6">
+                <p class="text-gray-500 text-sm">&copy; 2025 Tim Jurnalistik SMA Petra 4 Sidoarjo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+(I want everyone who send the comment can see the output)
