@@ -127,7 +127,7 @@
                 <!-- Catatan: Ganti LIVE_STREAM_ID dengan ID video live YouTube Anda (dari URL seperti https://www.youtube.com/watch?v=LIVE_STREAM_ID). Untuk live stream, gunakan fitur embed YouTube Live. -->
             </div>
             <div class="mt-6 text-center">
-                <p class="text-gray-600 text-sm">Tidak ada siaran saat ini? Cek jadwal acara di Instagram kami!</p>
+                <p class="text-gray-600 text-sm">Berkolaborasi dengan SMA Petra 4 & Digicom Trapat</p>
                 <a href="https://www.instagram.com/digicomtrapat/" class="inline-block mt-4 bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition duration-300">
                     <i class="fab fa-instagram mr-2"></i>Lihat Jadwal
                 </a>
