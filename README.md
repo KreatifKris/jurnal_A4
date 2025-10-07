@@ -332,5 +332,3 @@ Percaya Diri Mulai Dari Sini!
         </div>
     </footer>
 
-</body>
-</html>
