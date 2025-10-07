@@ -117,7 +117,7 @@
                 <!-- Embed YouTube Live Stream (Ganti dengan URL live stream Anda, misalnya dari YouTube) -->
                 <!-- Contoh: Jika menggunakan YouTube, gunakan format embed seperti ini. Pastikan video adalah live stream. -->
                 <iframe 
-                    src="https://www.youtube.com/embed/LIVE_STREAM_ID?autoplay=1&mute=0" 
+                    src="https://www.youtube.com/live/v243rRliyzg?si=tO_RKfhoJ4FYrNeV" 
                     allowfullscreen 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     title="Live Streaming SMA Petra 4 Sidoarjo">
