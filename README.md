@@ -332,4 +332,3 @@ Percaya Diri Mulai Dari Sini!
         </div>
     </footer>
 
-(I want everyone who send the comment can see the output)
