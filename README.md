@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -70,7 +70,7 @@
                         <i class="fas fa-newspaper text-white text-xl"></i>
                     </div>
                     <!-- Tambahan: Logo Sekolah di sebelah kiri atas (bisa diganti dengan path gambar asli) -->
-                    <img src="logo.png" alt="Logo SMA Petra 4 Sidoarjo" class="school-logo mr-3">
+                    <img src="logo.png">
                     <h1 class="text-2xl font-bold text-gray-800">Berita Terkini</h1>
                 </div>
 
@@ -83,7 +83,7 @@
                     </div>
                     <!-- Tambahan: Listing Logo di Sebelah Atas Kanan (misalnya list ikon atau logo tambahan; di sini saya buat sebagai logo sekolah alternatif atau ikon list) -->
                     <div class="flex items-center space-x-2">
-                        <img src="sekolah.png" alt="Listing Logo" class="school-logo rounded-full">
+                        <img src="sekolah.png" class="school-logo rounded-full">
                         <span class="text-sm text-gray-600 hidden md:block">OUR NEWS IN SMA PETRA 4</span>
                     </div>
                     <button class="md:hidden text-gray-700">
@@ -114,9 +114,9 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- News Card 1: ELS Desain Grafis -->
-                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div>
                     <div class="relative">
-                        <img src="berita1.png.png" alt="Desain grafis kreatif dengan elemen modern" class="w-full h-48 object-cover">
+                        <img src="berita1.png.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS DESAIN GRAFIS</span>
                     </div>
                     <div class="p-6">
@@ -129,9 +129,9 @@
                     </div>
                 </div>
                 <!-- News Card 2: ELS Cooking -->
-                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div>
                     <div class="relative">
-                        <img src="berita3.png.png" alt="Ilustrasi kegiatan cooking dengan latar alam" class="w-full h-48 object-cover">
+                        <img src="berita3.png.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS COOKING</span>
                     </div>
                     <div class="p-6">
@@ -144,9 +144,9 @@
                     </div>
                 </div>
                 <!-- News Card 3: ELS Makeup -->
-                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div>
                     <div class="relative">
-                        <img src="Makeup.png" alt="Beauty and makeup class with students learning skincare" class="w-full h-48 object-cover">
+                        <img src="Makeup.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS MAKEUP</span>
                     </div>
                     <div class="p-6">
@@ -159,9 +159,9 @@
                     </div>
                 </div>
                 <!-- News Card 4: ELS Bahasa Jepang -->
-                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div>
                     <div class="relative">
-                        <img src="jepang.png" alt="Japanese language class" class="w-full h-48 object-cover">
+                        <img src="jepang.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS BAHASA JEPANG</span>
                     </div>
                     <div class="p-6">
