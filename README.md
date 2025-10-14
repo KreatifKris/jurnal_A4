@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -251,23 +251,25 @@
         </div>
     </section>
 
-    <!-- Section Video Dokumenter (Dari Direktori PC) -->
+    <!-- Section Video Dokumenter (Diubah tanpa video) -->
     <section id="documentaries" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Video Dokumenter</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Jelajahi dokumenter dari direktori PC Anda. Pastikan file video ada di folder 'videos/' di proyek ini.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Daftar dokumenter tanpa pemutaran video. Klik link untuk melihat di luar situs.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Video 1 -->
+                <!-- Item 1 (Tanpa Video) -->
                 <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
-                    <video width="100%" height="240" controls class="rounded-t-xl">
-                        <source src="videos/dokumenter1.mp4" type="video/mp4">
-                        Browser Anda tidak mendukung tag video.
-                    </video>
+                    <div class="relative">
+                        <img src="placeholder1.png" alt="Placeholder untuk Dokumenter 1" class="w-full h-48 object-cover">
+                        <span class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">DOKUMENTER 1</span>
+                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg">Kisah ELS Elektro</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Dokumenter tentang inovasi siswa ELS Elektro.</p>
+                        <p class="text-gray-600 mb-4 text-sm">Deskripsi: Dokumenter tentang inovasi siswa ELS Elektro.</p>
+                        <a href="https://example.com/dokumenter1" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">Lihat Detail →</a>
                     </div>
                 </div>
-                <!-- Video 2
+                <!-- Item 2 (Tanpa Video) -->
+                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden
