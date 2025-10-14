@@ -106,80 +106,6 @@
         </div>
     </div>
 
-    <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Live Streaming</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Tonton siaran langsung acara sekolah dan kegiatan terkini dari SMA Petra 4 Sidoarjo.</p>
-    </div>
-    <div class="max-w-4xl mx-auto">
-        <div class="live-stream-container relative">
-            <!-- Indikator Live -->
-            <div class="live-indicator">
-                <i class="fas fa-circle mr-1"></i>LIVE
-            </div>
-            <!-- Embed YouTube Live Stream -->
-            <iframe 
-                src="https://www.youtube.com/live/v243rRliyzg?si=tO_RKfhoJ4FYrNeV" 
-                allowfullscreen 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                title="Live Streaming SMA Petra 4 Sidoarjo">
-            </iframe>
-        </div>
-        <div class="mt-6 text-center">
-            <p class="text-gray-600 text-sm">Tidak ada siaran saat ini? Cek jadwal acara di Instagram kami!</p>
-            <a href="https://www.instagram.com/digicomtrapat/" class="inline-block mt-4 bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition duration-300">
-                <i class="fab fa-instagram mr-2"></i>Lihat Jadwal
-            </a>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="home" class="gradient-bg text-white py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="bg-white text-purple-600 px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">FEATURED STORY</span>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                        Wired for Innovation Throught Electro
-                    </h2>
-                    <p class="text-purple-100 mb-8 text-lg">
-                        Di balik ruang fisika yang penuh dengan untaian kabel, transistor, dan resistor sekelompok siswa sibuk merakit alat alat rusak. 
-
-                        Mereka adalah bagian dari ELS Elektro, sebuah kelas yang bukan hanya mengajarkan sebuah teori tetapi juga keterampilan hidup yang berguna. Menurut mereka, yang merupakan bagian dari ELS Elektro merasa bahwa elektro bukanlah sesuatu hal yang cukup mudah untuk dilakukan.
-
-                        Retha, salah satu siswa ELS Elektro berkata, "Di elektro saat kerjain tugas harus bisa fokus, presisi sama sabar."
-                    </p>
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="flex items-center">
-                            <i class="far fa-calendar-alt mr-2"></i>
-                            <span>26 Agustus 2025</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="far fa-clock mr-2"></i>
-                            <span>info terkini</span>
-                        </div>
-                    </div>
-                    <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
-                        Baca Selengkapnya
-                    </a>
-                </div>
-                <div class="relative">
-                    <img src="Berita2.png.png" alt="Modern digital transformation concept with futuristic technology elements and data visualization on dark background" class="rounded-xl shadow-2xl">
-                    <div class="absolute -bottom-4 -left-4 bg-white text-gray-800 p-4 rounded-lg shadow-lg">
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-3">
-                                <img src="logo.png" alt="Professional portrait of senior technology journalist with glasses and formal attire" class="rounded-full">
-                            </div>
-                            <div>
-                                <p class="font-semibold"></p>
-                                <p class="text-sm text-gray-600">Senior Tech Journalist</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="news" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
@@ -190,7 +116,7 @@
                 <!-- News Card 1: ELS Desain Grafis -->
                 <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="relative">
-                        <img src="berita1.png.png" alt="Economic growth chart with upward trend and financial district skyline in background" class="w-full h-48 object-cover">
+                        <img src="berita1.png.png" alt="Desain grafis kreatif dengan elemen modern" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS DESAIN GRAFIS</span>
                     </div>
                     <div class="p-6">
@@ -205,7 +131,7 @@
                 <!-- News Card 2: ELS Cooking -->
                 <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="relative">
-                        <img src="berita3.png.png" alt="Green energy solar panels installation in tropical landscape with clear blue sky" class="w-full h-48 object-cover">
+                        <img src="berita3.png.png" alt="Ilustrasi kegiatan cooking dengan latar alam" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS COOKING</span>
                     </div>
                     <div class="p-6">
@@ -251,25 +177,51 @@
         </div>
     </section>
 
-    <!-- Section Video Dokumenter (Diubah tanpa video) -->
-    <section id="documentaries" class="py-16 bg-gray-50">
+    <!-- Comment Section Placeholder -->
+    <section id="comments" class="py-16 bg-purple-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Video Dokumenter</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Daftar dokumenter tanpa pemutaran video. Klik link untuk melihat di luar situs.</p>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Tinggalkan Komentar</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Nama Anda">
+                    </div>
+                    <div class="mb-4">
+                        <label for="comment" class="block text-gray-700 font-medium mb-2">Komentar</label>
+                        <textarea id="comment" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Tulis komentar Anda di sini..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-purple-700 transition duration-300">Kirim Komentar</button>
+                </form>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Item 1 (Tanpa Video) -->
-                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
-                    <div class="relative">
-                        <img src="placeholder1.png" alt="Placeholder untuk Dokumenter 1" class="w-full h-48 object-cover">
-                        <span class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">DOKUMENTER 1</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg">Kisah ELS Elektro</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Deskripsi: Dokumenter tentang inovasi siswa ELS Elektro.</p>
-                        <a href="https://example.com/dokumenter1" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">Lihat Detail →</a>
-                    </div>
-                </div>
-                <!-- Item 2 (Tanpa Video) -->
-                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden
+        </div>
+    </section>
+ 
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Ikuti Kami</h2>
+            <p class="text-gray-400 mb-8">Terhubung dengan kami melalui media sosial.</p>
+            <div class="flex justify-center items-center space-x-6">
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/yourphonenumber" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
+                    <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                    <span class="font-medium">WhatsApp</span>
+                </a>
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/digicomtrapat/" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
+                    <i class="fab fa-instagram text-2xl mr-2"></i>
+                    <span class="font-medium">Instagram</span>
+                </a>
+                <!-- TikTok Link -->
+                <a href="https://tiktok.com/@yourprofile" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
+                    <i class="fab fa-tiktok text-2xl mr-2"></i>
+                    <span class="font-medium">TikTok</span>
+                </a>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6">
+                <p class="text-gray-500 text-sm">&copy; 2025 Tim Jurnalistik SMA Petra 4 Sidoarjo. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
