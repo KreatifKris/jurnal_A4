@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +56,7 @@
         }
         .social-btn-gradient:hover {
             background: linear-gradient(135deg, #2563eb 0%, #dc2626 100%);
-        
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -104,33 +105,33 @@
             </div>
         </div>
     </div>
-<div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Live Streaming</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">Tonton siaran langsung acara sekolah dan kegiatan terkini dari SMA Petra 4 Sidoarjo.</p>
-        </div>
-        <div class="max-w-4xl mx-auto">
-            <div class="live-stream-container relative">
-                <!-- Indikator Live -->
-                <div class="live-indicator">
-                    <i class="fas fa-circle mr-1"></i>LIVE
-                </div>
-                <!-- Embed YouTube Live Stream (Ganti dengan URL live stream Anda, misalnya dari YouTube) -->
-                <!-- Contoh: Jika menggunakan YouTube, gunakan format embed seperti ini. Pastikan video adalah live stream. -->
-                <iframe 
-                    src="https://www.youtube.com/live/v243rRliyzg?si=tO_RKfhoJ4FYrNeV" 
-                    allowfullscreen 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    title="Live Streaming SMA Petra 4 Sidoarjo">
-                </iframe>
-                <!-- Alternatif jika menggunakan Twitch: -->
-                <!-- <iframe src="https://player.twitch.tv/?channel=YOUR_CHANNEL&parent=yourdomain.com" frameborder="0" allowfullscreen="true" scrolling="no" height="400"></iframe> -->
-                <!-- Catatan: Ganti LIVE_STREAM_ID dengan ID video live YouTube Anda (dari URL seperti https://www.youtube.com/watch?v=LIVE_STREAM_ID). Untuk live stream, gunakan fitur embed YouTube Live. -->
+
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Live Streaming</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Tonton siaran langsung acara sekolah dan kegiatan terkini dari SMA Petra 4 Sidoarjo.</p>
+    </div>
+    <div class="max-w-4xl mx-auto">
+        <div class="live-stream-container relative">
+            <!-- Indikator Live -->
+            <div class="live-indicator">
+                <i class="fas fa-circle mr-1"></i>LIVE
             </div>
-            <div class="mt-6 text-center">
-                <p class="text-gray-600 text-sm">Tidak ada siaran saat ini? Cek jadwal acara di Instagram kami!</p>
-                <a href="https://www.instagram.com/digicomtrapat/" class="inline-block mt-4 bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition duration-300">
-                    <i class="fab fa-instagram mr-2"></i>Lihat Jadwal
-                </a>
+            <!-- Embed YouTube Live Stream -->
+            <iframe 
+                src="https://www.youtube.com/live/v243rRliyzg?si=tO_RKfhoJ4FYrNeV" 
+                allowfullscreen 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                title="Live Streaming SMA Petra 4 Sidoarjo">
+            </iframe>
+        </div>
+        <div class="mt-6 text-center">
+            <p class="text-gray-600 text-sm">Tidak ada siaran saat ini? Cek jadwal acara di Instagram kami!</p>
+            <a href="https://www.instagram.com/digicomtrapat/" class="inline-block mt-4 bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition duration-300">
+                <i class="fab fa-instagram mr-2"></i>Lihat Jadwal
+            </a>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="gradient-bg text-white py-16">
         <div class="container mx-auto px-4">
@@ -185,7 +186,6 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Berita Terbaru</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Update Berita SMA Trafour</p>
             </div>
-
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- News Card 1: ELS Desain Grafis -->
                 <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
@@ -195,26 +195,14 @@
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg mb-3 text-gray-800">Menembus Batas Kreativitas</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Suasana di kelas ELS Desain Grafis tidak selalu kaku. Ada yang serius mengutak-atik desain, ada pula yang sesekali bermain game. Namun, justru dalam atmosfer santai itulah kreativitas siswa semakin tumbuh.
-
-                        Kathleen adalah salah satunya. Ia senang bisa merancang CV dengan gaya abstrak yang berbeda dari kebanyakan. “CV saya memang tidak terlalu terstruktur, tapi itu justru ciri khas saya,” katanya. Baginya, materi logo menjadi yang paling berkesan karena sudah terbiasa membuat sketsa sejak awal. Lebih dari sekadar tugas, ia bermimpi menjadikan karya-karyanya sebagai pintu menuju dunia wirausaha.
-
-                        Abby juga punya cerita seru. Bersama timnya, ia melahirkan sebuah brand bernama Maison Étoile—yang berarti toko di galaksi, bagaikan berlian di antara bintang. “Membuat logo itu menyenangkan, karena di situ kami bisa benar-benar menyalurkan kreativitas dan membangun identitas brand sendiri,” jelasnya. Rencananya, produk perdana mereka berupa merchandise akan diluncurkan pada bulan bahasa.
-
-                        Sementara itu, Davin menilai pengalaman ini lebih dari sekadar belajar teknik. “Kami diajarkan untuk berani keluar dari pola yang biasa, jadi karya seperti logo atau CV bisa bermanfaat, bahkan dijual,” ujarnya.
-
-                        Dari CV hingga logo, dari ide hingga brand, para siswa membuktikan bahwa ruang kelas bisa menjadi laboratorium kreativitas. Di sinilah mereka tidak hanya belajar desain, tetapi juga belajar bermimpi lebih besar: menyiapkan masa depan dengan karya.
-                        </p>
+                        <p class="text-gray-600 mb-4 text-sm">Suasana di kelas ELS Desain Grafis tidak selalu kaku. Ada yang serius mengutak-atik desain, ada pula yang sesekali bermain game. Namun, justru dalam atmosfer santai itulah kreativitas siswa semakin tumbuh. ...</p>
                         <div class="flex items-center justify-between mt-4">
                             <span class="text-sm text-gray-500">23 Sept 2025</span>
-                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
-                                →
-                            </a>
+                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- News Card 2: ELS Cooking (Diperbaiki struktur) -->
+                <!-- News Card 2: ELS Cooking -->
                 <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="relative">
                         <img src="berita3.png.png" alt="Green energy solar panels installation in tropical landscape with clear blue sky" class="w-full h-48 object-cover">
@@ -222,26 +210,14 @@
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg mb-3 text-gray-800">Inovasi Mi Ayam ala Siswa ELS Cooking</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Memodifikasi resep secara mandiri untuk menemukan cita rasa yang menurut mereka paling pas di lidah. Inovasi ini membuat sajian mereka terasa unik dibandingkan kuliner sejenis. Bahan utama diperoleh dari persediaan rumah dan pasar tradisional. Meski belum ada cerita khusus di balik sumber lokalnya, mereka tetap menjaga kualitas agar rasa tetap konsisten.
-
-                        Menurut mereka, mi ayam sendiri sudah lama menjadi kuliner khas Indonesia. Perubahan zaman terutama terlihat pada teknik memasak. Dengan hadirnya teknologi baru, proses penyajian kini bisa lebih cepat dan efisien tanpa mengurangi cita rasa.
-
-                        Ketika ditanya siapa yang berperan menjaga keaslian rasa, mereka menegaskan bahwa sosok pewaris resep adalah kunci utama. Warisan inilah yang membuat hidangan tetap otentik. Lebih dari sekadar makanan, mi ayam dianggap penting karena menjadi simbol keanekaragaman rempah di Indonesia. Dari satu mangkuk sederhana, tersimpan identitas budaya dan sejarah panjang kuliner Nusantara.
-
-                        Menariknya, kelompok Jifon juga berusaha menyesuaikan diri dengan tren modern, seperti makanan sehat, vegetarian, hingga digitalisasi pemasaran. Caranya bukan dengan mengubah rasa secara total, melainkan meleburkan tren baru ke dalam resep tanpa menghilangkan ciri khas aslinya.
-
-                        Sungguh, seporsi mi ayam ala Jifon bukan hanya soal rasa, tetapi juga kisah tentang tradisi, inovasi, dan identitas budaya Indonesia.
-                        </p>
+                        <p class="text-gray-600 mb-4 text-sm">Memodifikasi resep secara mandiri untuk menemukan cita rasa yang menurut mereka paling pas di lidah. ...</p>
                         <div class="flex items-center justify-between mt-4">
                             <span class="text-sm text-gray-500">15 Oktober 2025</span>
-                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
-                                →
-                            </a>
+                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- News Card 3: ELS Makeup (Diperbaiki struktur) -->
+                <!-- News Card 3: ELS Makeup -->
                 <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="relative">
                         <img src="Makeup.png" alt="Beauty and makeup class with students learning skincare" class="w-full h-48 object-cover">
@@ -249,24 +225,14 @@
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg mb-3 text-gray-800">EKSKUL MAKEUP: Sekolah, Skincare, Self-Confidence!</h3>
-                        <p class="text-gray-600 mb-4 text-sm">SMA Kristen Petra 4 Sidoarjo punya cara unik mendukung kreativitas siswanya. Tahun ajaran 2025 ini, sekolah membuka ekskul Make-Up yang diikuti 20 siswi. Dibimbing langsung oleh Miss Jenna (@jenna_mua_sulam), kegiatan ini tidak hanya mengajarkan teknik make-up, tetapi juga cara merawat kulit, mengenali jenis kulit wajah, serta memilih skincare yang aman.
-
-Celine, salah satu peserta, mengaku mendapat banyak ilmu baru. “Dulu aku sering asal cuci muka. Tapi setelah ikut ekskul ini, aku tahu step by step mencuci wajah yang benar, dan cara pakai skincare supaya hasilnya maksimal,” ujarnya.
-
-Keseruan tidak berhenti di kelas. Miss Jenna dan para siswi sudah menyiapkan proyek untuk ikut lomba make-up. Vanessa, Erlina, dan Belinda jadi beberapa nama yang siap turun. “Lomba itu bukan soal menang kalah, tapi kesempatan belajar,” kata Miss Jenna. Suasana belajar yang seru membuat ekskul Make-Up ini jadi ruang baru bagi siswi untuk merawat diri, menambah pengalaman, dan tumbuh lebih percaya diri.
-
-Percaya Diri Mulai Dari Sini!
-                        </p>
+                        <p class="text-gray-600 mb-4 text-sm">SMA Kristen Petra 4 Sidoarjo punya cara unik mendukung kreativitas siswanya. ...</p>
                         <div class="flex items-center justify-between mt-4">
                             <span class="text-sm text-gray-500">9 September 2025</span>
-                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">
-                                →
-                            </a>
+                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
                         </div>
                     </div>
                 </div>
-                
-            
+                <!-- News Card 4: ELS Bahasa Jepang -->
                 <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="relative">
                         <img src="jepang.png" alt="Japanese language class" class="w-full h-48 object-cover">
@@ -274,7 +240,7 @@ Percaya Diri Mulai Dari Sini!
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-lg mb-3 text-gray-800">Bahasa Jepang sebagai Jembatan Masa Depan</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Bahasa Jepang merupakan salah satu bahasa asing yang memiliki daya tarik besar bagi generasi muda di berbagai belahan dunia. Nathan dan Deven punya mimpi besar ketika memilih ikut ELS Bahasa Jepang. Mereka ingin bisa bercakap lancar, menikmati drama tanpa subtitle, dan suatu hari bekerja di Jepang. Meski aksara kanji terasa sulit, semangat mereka tak pernah padam. Nathan: “Setuju! Bahasa bukanlah penghalang, tapi pintu ke dunia baru.”</p>
+                        <p class="text-gray-600 mb-4 text-sm">Bahasa Jepang merupakan salah satu bahasa asing yang memiliki daya tarik besar bagi generasi muda di berbagai belahan dunia. ...</p>
                         <div class="flex items-center justify-between mt-4">
                             <span class="text-sm text-gray-500">9 September 2025</span>
                             <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
@@ -285,50 +251,23 @@ Percaya Diri Mulai Dari Sini!
         </div>
     </section>
 
-    <!-- Comment Section Placeholder -->
-    <section id="comments" class="py-16 bg-purple-50">
+    <!-- Section Video Dokumenter (Dari Direktori PC) -->
+    <section id="documentaries" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Tinggalkan Komentar</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-                <form>
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
-                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Nama Anda">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Video Dokumenter</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Jelajahi dokumenter dari direktori PC Anda. Pastikan file video ada di folder 'videos/' di proyek ini.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="news-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <video width="100%" height="240" controls class="rounded-t-xl">
+                        <source src="videos/dokumenter1.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg">Kisah ELS Elektro</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Dokumenter tentang inovasi siswa ELS Elektro.</p>
                     </div>
-                    <div class="mb-4">
-                        <label for="comment" class="block text-gray-700 font-medium mb-2">Komentar</label>
-                        <textarea id="comment" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Tulis komentar Anda di sini..."></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-purple-700 transition duration-300">Kirim Komentar</button>
-                </form>
-            </div>
-        </div>
-    </section>
- 
-    <footer id="contact" class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-4">Ikuti Kami</h2>
-            <p class="text-gray-400 mb-8">Terhubung dengan kami melalui media sosial.</p>
-            <div class="flex justify-center items-center space-x-6">
-                <!-- WhatsApp Link -->
-                <a href="https://wa.me/yourphonenumber" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
-                    <i class="fab fa-whatsapp text-2xl mr-2"></i>
-                    <span class="font-medium">WhatsApp</span>
-                </a>
-                <!-- Instagram Link -->
-                <a href="https://www.instagram.com/digicomtrapat/" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
-                    <i class="fab fa-instagram text-2xl mr-2"></i>
-                    <span class="font-medium">Instagram</span>
-                </a>
-                <!-- TikTok Link -->
-                <a href="https://tiktok.com/@yourprofile" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
-                    <i class="fab fa-tiktok text-2xl mr-2"></i>
-                    <span class="font-medium">TikTok</span>
-                </a>
-            </div>
-            <div class="border-t border-gray-700 mt-10 pt-6">
-                <p class="text-gray-500 text-sm">&copy; 2025 Tim Jurnalistik SMA Petra 4 Sidoarjo. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+                </div>
+                <!-- Video 2
