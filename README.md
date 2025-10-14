@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -71,7 +71,7 @@
                     </div>
                     <!-- Tambahan: Logo Sekolah di sebelah kiri atas (bisa diganti dengan path gambar asli) -->
                     <img src="logo.png">
-                    <h1 class="text-2xl font-bold text-gray-800">Berita Terkini</h1>
+                    <h1 class="text-3xl font-bold text-black">Berita Terkini</h1>  <!-- Diubah ke text-3xl dan text-black untuk visibilitas -->
                 </div>
 
                 <!-- Search, Mobile Menu, dan Logo Listing di Sebelah Atas Kanan -->
