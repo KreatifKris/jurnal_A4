@@ -1,10 +1,8 @@
 
-<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BERITA TERKINI SMA PETRA 4 SIDOARJO</title>
-    <!-- <link rel="stylesheet" href="bg.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -44,7 +42,6 @@
             100% { background-color: #ef4444; }
         }
 
-        /* Tambahan untuk logo sekolah di sebelah atas laman (top right) */
         .school-logo {
             height: 40px;
             width: auto;
@@ -64,24 +61,22 @@
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <!-- Logo Kiri (Icon + Judul + Logo Sekolah) -->
+                <!-- Logo Kiri -->
                 <div class="flex items-center">
                     <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
                         <i class="fas fa-newspaper text-white text-xl"></i>
                     </div>
-                    <!-- Tambahan: Logo Sekolah di sebelah kiri atas (bisa diganti dengan path gambar asli) -->
                     <img src="logo.png">
-                    <h1 class="text-3xl font-bold text-black">Berita Terkini</h1>  <!-- Diubah ke text-3xl dan text-black untuk visibilitas -->
+                    <h1 class="text-3xl font-bold text-black">Berita Terkini</h1>
                 </div>
 
-                <!-- Search, Mobile Menu, dan Logo Listing di Sebelah Atas Kanan -->
+                <!-- Search, Mobile Menu, dan Logo Listing -->
                 <div class="flex items-center space-x-4">
-                    <!-- Search -->
-                    <div class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2">
+                    <!-- Search (Now with ID for JavaScript) -->
+                    <div class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2" id="searchContainer">
                         <i class="fas fa-search text-gray-500 mr-2"></i>
-                        <input type="text" placeholder="Cari berita..." class="bg-transparent outline-none text-sm">
+                        <input type="text" id="searchInput" placeholder="Cari berita..." class="bg-transparent outline-none text-sm" oninput="filterNews()">
                     </div>
-                    <!-- Tambahan: Listing Logo di Sebelah Atas Kanan (misalnya list ikon atau logo tambahan; di sini saya buat sebagai logo sekolah alternatif atau ikon list) -->
                     <div class="flex items-center space-x-2">
                         <img src="sekolah.png" class="school-logo rounded-full">
                         <span class="text-sm text-gray-600 hidden md:block">OUR NEWS IN SMA PETRA 4</span>
@@ -112,9 +107,9 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Berita Terbaru</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Update Berita SMA Trafour</p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- News Card 1: ELS Desain Grafis -->
-                <div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="newsGrid">
+                <!-- News Card 1 -->
+                <div class="news-card">
                     <div class="relative">
                         <img src="berita1.png.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS DESAIN GRAFIS</span>
@@ -128,8 +123,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- News Card 2: ELS Cooking -->
-                <div>
+                <!-- News Card 2 -->
+                <div class="news-card">
                     <div class="relative">
                         <img src="berita3.png.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS COOKING</span>
@@ -143,8 +138,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- News Card 3: ELS Makeup -->
-                <div>
+                <!-- News Card 3 -->
+                <div class="news-card">
                     <div class="relative">
                         <img src="Makeup.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS MAKEUP</span>
@@ -158,8 +153,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- News Card 4: ELS Bahasa Jepang -->
-                <div>
+                <!-- News Card 4 -->
+                <div class="news-card">
                     <div class="relative">
                         <img src="jepang.png" class="w-full h-48 object-cover">
                         <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold">ELS BAHASA JEPANG</span>
@@ -177,42 +172,43 @@
         </div>
     </section>
 
-    <!-- Comment Section Placeholder -->
+    <!-- Comment Section (Unchanged from previous version) -->
     <section id="comments" class="py-16 bg-purple-50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Tinggalkan Komentar</h2>
             <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-                <form>
+                <form id="commentForm">
                     <div class="mb-4">
                         <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
-                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Nama Anda">
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Nama Anda" required>
                     </div>
                     <div class="mb-4">
                         <label for="comment" class="block text-gray-700 font-medium mb-2">Komentar</label>
-                        <textarea id="comment" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Tulis komentar Anda di sini..."></textarea>
+                        <textarea id="comment" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Tulis komentar Anda di sini..." required></textarea>
                     </div>
                     <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-purple-700 transition duration-300">Kirim Komentar</button>
                 </form>
+                <div id="commentsList" class="mt-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Daftar Komentar</h3>
+                </div>
             </div>
         </div>
     </section>
- 
+
     <footer id="contact" class="bg-gray-900 text-white py-12">
+        <!-- Footer content remains the same -->
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-2xl font-bold mb-4">Ikuti Kami</h2>
             <p class="text-gray-400 mb-8">Terhubung dengan kami melalui media sosial.</p>
             <div class="flex justify-center items-center space-x-6">
-                <!-- WhatsApp Link -->
                 <a href="https://wa.me/yourphonenumber" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
                     <i class="fab fa-whatsapp text-2xl mr-2"></i>
                     <span class="font-medium">WhatsApp</span>
                 </a>
-                <!-- Instagram Link -->
                 <a href="https://www.instagram.com/digicomtrapat/" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
                     <i class="fab fa-instagram text-2xl mr-2"></i>
                     <span class="font-medium">Instagram</span>
                 </a>
-                <!-- TikTok Link -->
                 <a href="https://tiktok.com/@yourprofile" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
                     <i class="fab fa-tiktok text-2xl mr-2"></i>
                     <span class="font-medium">TikTok</span>
@@ -223,5 +219,81 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Existing comment handling code (from previous response)
+        const form = document.getElementById('commentForm');
+        const commentsList = document.getElementById('commentsList');
+        const serverUrl = 'http://localhost:3000';  // Ensure this matches your server
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const commentText = document.getElementById('comment').value;
+            try {
+                const response = await fetch(`${serverUrl}/comments`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, comment: commentText }),
+                });
+                if (response.ok) {
+                    alert('Komentar berhasil dikirim!');
+                    form.reset();
+                    fetchComments();
+                } else {
+                    alert('Gagal mengirim komentar.');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('Terjadi kesalahan.');
+            }
+        });
+
+        async function fetchComments() {
+            try {
+                const response = await fetch(`${serverUrl}/comments`);
+                const comments = await response.json();
+                commentsList.innerHTML = '<h3 class="text-xl font-bold text-gray-800 mb-4">Daftar Komentar</h3>';
+                comments.forEach((item) => {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.className = 'bg-gray-100 p-4 rounded-lg mb-4';
+                    commentDiv.innerHTML = `<p><strong>${item.name}:</strong> ${item.comment}</p><button onclick="deleteComment(${item.id})" class="text-red-600">Hapus</button>`;
+                    commentsList.appendChild(commentDiv);
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        async function deleteComment(id) {
+            if (confirm('Yakin?')) {
+                try {
+                    const response = await fetch(`${serverUrl}/comments/${id}`, { method: 'DELETE' });
+                    if (response.ok) {
+                        fetchComments();
+                    }
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+        }
+
+        window.addEventListener('load', fetchComments);
+
+        // New: Search functionality
+        function filterNews() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const newsCards = document.querySelectorAll('.news-card');
+            newsCards.forEach(card => {
+                const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+                const content = card.querySelector('p')?.textContent.toLowerCase() || '';
+                if (title.includes(searchInput) || content.includes(searchInput)) {
+                    card.style.display = 'block';  // Show the card
+                } else {
+                    card.style.display = 'none';  // Hide the card
+                }
+            });
+        }
+    </script>
 </body>
 </html>
