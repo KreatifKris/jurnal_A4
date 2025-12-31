@@ -7,7 +7,6 @@
     <title>BERITA TERKINI SMA PETRA 4 SIDOARJO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"></script>
 
     <style>
@@ -34,6 +33,8 @@
             backdrop-filter: blur(8px);
             border-radius: 1rem;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
         
         .news-card:hover {
@@ -60,7 +61,6 @@
             background: transparent !important;
         }
 
-        /* Animasi masuk untuk komentar baru */
         .comment-fade-in {
             animation: slideUp 0.4s ease-out;
         }
@@ -84,7 +84,6 @@
                     </div>
                     <h1 class="text-2xl font-bold text-gray-800">Petra 4 News</h1>
                 </div>
-
                 <div class="flex items-center space-x-4">
                     <div class="hidden md:flex items-center bg-gray-200 rounded-full px-4 py-2">
                         <i class="fas fa-search text-gray-500 mr-2"></i>
@@ -113,38 +112,41 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="newsGrid">
                 <div class="news-card border border-gray-100 shadow-sm">
                     <img src="berita1.png.png" class="w-full h-40 object-cover" alt="Desain Grafis">
-                    <div class="p-5">
+                    <div class="p-5 flex-grow flex flex-direction-column flex-col">
                         <span class="text-xs font-bold text-blue-600 uppercase">Desain Grafis</span>
                         <h3 class="font-bold text-lg mt-2 leading-tight">Menembus Batas Kreativitas</h3>
-                        <p class="text-gray-600 text-xs mt-3">Eksplorasi desain tanpa batas di SMA Petra 4...</p>
-                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
+                        <p class="text-gray-600 text-xs mt-3 flex-grow">Eksplorasi desain tanpa batas di SMA Petra 4...</p>
+                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" target="_blank" class="inline-block mt-4 text-purple-600 font-bold text-sm hover:underline">Baca Selengkapnya →</a>
                     </div>
                 </div>
+
                 <div class="news-card border border-gray-100 shadow-sm">
                     <img src="berita3.png.png" class="w-full h-40 object-cover" alt="Cooking">
-                    <div class="p-5">
+                    <div class="p-5 flex-grow flex flex-col">
                         <span class="text-xs font-bold text-orange-500 uppercase">ELS Cooking</span>
                         <h3 class="font-bold text-lg mt-2 leading-tight">Inovasi Mi Ayam Siswa</h3>
-                        <p class="text-gray-600 text-xs mt-3">Kreasi kuliner sehat dan lezat karya siswa...</p>
-                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
+                        <p class="text-gray-600 text-xs mt-3 flex-grow">Kreasi kuliner sehat dan lezat karya siswa...</p>
+                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" target="_blank" class="inline-block mt-4 text-purple-600 font-bold text-sm hover:underline">Baca Selengkapnya →</a>
                     </div>
                 </div>
+
                 <div class="news-card border border-gray-100 shadow-sm">
                     <img src="Makeup.png" class="w-full h-40 object-cover" alt="Makeup">
-                    <div class="p-5">
+                    <div class="p-5 flex-grow flex flex-col">
                         <span class="text-xs font-bold text-pink-500 uppercase">ELS Makeup</span>
                         <h3 class="font-bold text-lg mt-2 leading-tight">Seni Rias & Percaya Diri</h3>
-                        <p class="text-gray-600 text-xs mt-3">Mengekspresikan diri melalui seni makeup wajah...</p>
-                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
+                        <p class="text-gray-600 text-xs mt-3 flex-grow">Mengekspresikan diri melalui seni makeup wajah...</p>
+                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" target="_blank" class="inline-block mt-4 text-purple-600 font-bold text-sm hover:underline">Baca Selengkapnya →</a>
                     </div>
                 </div>
+
                 <div class="news-card border border-gray-100 shadow-sm">
                     <img src="jepang.png" class="w-full h-40 object-cover" alt="Jepang">
-                    <div class="p-5">
+                    <div class="p-5 flex-grow flex flex-col">
                         <span class="text-xs font-bold text-red-600 uppercase">Bahasa Jepang</span>
                         <h3 class="font-bold text-lg mt-2 leading-tight">Jembatan Masa Depan</h3>
-                        <p class="text-gray-600 text-xs mt-3">Menguasai bahasa asing untuk peluang global...</p>
-                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
+                        <p class="text-gray-600 text-xs mt-3 flex-grow">Menguasai bahasa asing untuk peluang global...</p>
+                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" target="_blank" class="inline-block mt-4 text-purple-600 font-bold text-sm hover:underline">Baca Selengkapnya →</a>
                     </div>
                 </div>
             </div>
@@ -157,7 +159,6 @@
                 <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                     <i class="fas fa-comments mr-3 text-purple-600"></i> Diskusi Siswa
                 </h2>
-                
                 <form id="commentForm" class="mb-10">
                     <div class="mb-4">
                         <input type="text" id="name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all" placeholder="Nama Lengkap" required>
@@ -169,7 +170,6 @@
                         Kirim Komentar
                     </button>
                 </form>
-
                 <div id="commentsList" class="space-y-4">
                     <p class="text-center text-gray-400 text-sm">Memuat diskusi...</p>
                 </div>
@@ -192,7 +192,6 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-        // Konfigurasi Firebase Anda
         const firebaseConfig = {
             apiKey: "AIzaSyD3yFm25HY3GUrdTEBr9d-eLRbOkH8xnxc",
             authDomain: "jurnal-sma-a4.firebaseapp.com",
@@ -204,11 +203,9 @@
             measurementId: "G-6VQT5SGFER"
         };
 
-        // Inisialisasi Firebase
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
 
-        // --- 1. INISIALISASI PARTIKEL ---
         tsParticles.load("tsparticles", {
             particles: {
                 number: { value: 50, density: { enable: true, value_area: 800 } },
@@ -227,58 +224,45 @@
             }
         });
 
-        // --- 2. LOGIKA FIREBASE KOMENTAR ---
         const form = document.getElementById('commentForm');
         const commentsList = document.getElementById('commentsList');
         const submitBtn = document.getElementById('submitBtn');
 
-        // Fungsi Kirim Data
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
             const name = document.getElementById('name').value;
             const text = document.getElementById('comment').value;
-
-            // Mencegah klik ganda
             submitBtn.disabled = true;
             submitBtn.innerText = "Mengirim...";
-
             try {
                 await addDoc(collection(db, "comments"), {
                     name: name,
                     comment: text,
                     timestamp: serverTimestamp()
                 });
-                
                 form.reset();
                 alert("Komentar berhasil dipublikasikan!");
             } catch (error) {
                 console.error("Error: ", error);
-                alert("Gagal kirim. Pastikan Rules Firebase sudah 'allow write: if true'");
+                alert("Gagal kirim. Cek koneksi atau rules Firebase.");
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.innerText = "Kirim Komentar";
             }
         });
 
-        // Ambil Data Real-time
         const q = query(collection(db, "comments"), orderBy("timestamp", "desc"));
         onSnapshot(q, (snapshot) => {
             commentsList.innerHTML = "";
-            
             if (snapshot.empty) {
-                commentsList.innerHTML = '<p class="text-center text-gray-400 text-sm">Belum ada diskusi. Jadilah yang pertama!</p>';
+                commentsList.innerHTML = '<p class="text-center text-gray-400 text-sm">Belum ada diskusi.</p>';
                 return;
             }
-
             snapshot.forEach((doc) => {
                 const data = doc.data();
                 const div = document.createElement('div');
                 div.className = "bg-white p-4 rounded-xl border border-gray-100 shadow-sm mb-3 comment-fade-in";
-                
-                // Ambil inisial nama
                 const initial = data.name ? data.name.charAt(0).toUpperCase() : "?";
-
                 div.innerHTML = `
                     <div class="flex items-start">
                         <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold shrink-0 mr-3">
@@ -292,21 +276,14 @@
                 `;
                 commentsList.appendChild(div);
             });
-        }, (error) => {
-            console.error("Firebase Error:", error);
-            commentsList.innerHTML = '<p class="text-red-500 text-center text-xs">Error: Izin database ditolak.</p>';
         });
 
-        // Fungsi Search Berita
         window.filterNews = function() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const cards = document.querySelectorAll('.news-card');
-            
             cards.forEach(card => {
                 const title = card.querySelector('h3').innerText.toLowerCase();
-                const category = card.querySelector('span').innerText.toLowerCase();
-                
-                if (title.includes(query) || category.includes(query)) {
+                if (title.includes(query)) {
                     card.style.display = "block";
                 } else {
                     card.style.display = "none";
@@ -315,3 +292,4 @@
         };
     </script>
 </body>
+
