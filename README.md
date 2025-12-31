@@ -187,14 +187,14 @@
 
         // --- KONFIGURASI FIREBASE (GANTI DENGAN MILIK ANDA) ---
         const firebaseConfig = {
-            apiKey: "AIzaSyD3yFm25HY3GUrdTEBr9d-eLRbOkH8xnxc",
-            authDomain: "jurnal-sma-a4.firebaseapp.com",
-            databaseURL: "https://jurnal-sma-a4-default-rtdb.firebaseio.com",
-            projectId: "jurnal-sma-a4",
-            storageBucket: "jurnal-sma-a4.firebasestorage.app",
-            messagingSenderId: "701172220342",
-            appId: "1:701172220342:web:ff0d35ca893ee93e6e4117",
-            measurementId: "G-6VQT5SGFER"
+        apiKey: "AIzaSyD3yFm25HY3GUrdTEBr9d-eLRbOkH8xnxc",
+        authDomain: "jurnal-sma-a4.firebaseapp.com",
+        databaseURL: "https://jurnal-sma-a4-default-rtdb.firebaseio.com",
+        projectId: "jurnal-sma-a4",
+        storageBucket: "jurnal-sma-a4.firebasestorage.app",
+        messagingSenderId: "701172220342",
+        appId: "1:701172220342:web:ff0d35ca893ee93e6e4117",
+        measurementId: "G-6VQT5SGFER"
         };
 
         // Inisialisasi Firebase
