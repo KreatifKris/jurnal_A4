@@ -5,41 +5,41 @@
     <title>BERITA TERKINI SMA PETRA 4 SIDOARJO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"></script>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
-            animation: fadeInPage 1s ease;  /* Animasi baru: Fade-in untuk seluruh halaman */
+            margin: 0;
+            overflow-x: hidden;
         }
-        
-        @keyframes fadeInPage {
-            from { opacity: 0; }
-            to { opacity: 1; }
+
+        /* Container untuk partikel di belakang layar */
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: #f3f4f6; /* Warna dasar jika partikel belum load */
         }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%);
-        }
-        
+
         .news-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeIn 0.8s ease forwards;  /* Animasi fade-in untuk news cards */
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+            border-radius: 1rem;
+            overflow: hidden;
         }
         
         .news-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
-        
-        .category-badge {
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        
-        .category-badge:hover {
-            background-color: #3b82f6;
-            transform: scale(1.1);  /* Efek scale hover */
-        }
-        
+
         .breaking-news {
             animation: pulse 2s infinite;
         }
@@ -50,256 +50,234 @@
             100% { background-color: #ef4444; }
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .school-logo {
-            height: 40px;
-            width: auto;
-            transition: transform 0.3s ease;
-        }
-        
-        .school-logo:hover {
-            transform: scale(1.1);
-        }
-
         .social-btn-gradient {
             background: linear-gradient(135deg, #3b82f6 0%, #ef4444 100%);
-            border: none;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .social-btn-gradient:hover {
-            background: linear-gradient(135deg, #2563eb 0%, #dc2626 100%);
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
-        #searchInput:focus {
-            animation: glow 0.5s ease infinite;  /* Animasi glow saat fokus */
-        }
-
-        @keyframes glow {
-            0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.5); }
-            100% { box-shadow: 0 0 10px 5px rgba(59, 130, 246, 0.5); }
-        }
-
-        button {
-            transition: transform 0.3s ease;  /* Animasi untuk tombol umum */
-        }
-        
-        button:hover {
-            transform: scale(1.05);  /* Efek scale pada tombol */
-        }
-
-        #commentsList div {
-            animation: slideDown 0.5s ease;  /* Animasi untuk setiap komentar */
+        section {
+            background: transparent !important;
         }
     </style>
 </head>
-<body class="bg-gray-100">
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50 animation-fadeInHeader">  <!-- Animasi untuk header -->
+<body>
+
+    <div id="tsparticles"></div>
+
+    <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <!-- Logo Kiri -->
                 <div class="flex items-center">
-                    <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-3 animate-fadeIn">
+                    <div class="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
                         <i class="fas fa-newspaper text-white text-xl"></i>
                     </div>
-                    <img src="logo.png" class="school-logo">
-                    <h1 class="text-3xl font-bold text-black">Berita Terkini</h1>
+                    <h1 class="text-2xl font-bold text-gray-800">Petra 4 News</h1>
                 </div>
 
-                <!-- Search, Mobile Menu, dan Logo Listing -->
                 <div class="flex items-center space-x-4">
-                    <!-- Search -->
-                    <div class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2" id="searchContainer">
+                    <div class="hidden md:flex items-center bg-gray-200 rounded-full px-4 py-2">
                         <i class="fas fa-search text-gray-500 mr-2"></i>
                         <input type="text" id="searchInput" placeholder="Cari berita..." class="bg-transparent outline-none text-sm" oninput="filterNews()">
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <img src="sekolah.png" class="school-logo rounded-full">
-                        <span class="text-sm text-gray-600 hidden md:block">OUR NEWS IN SMA PETRA 4</span>
-                    </div>
-                    <button class="md:hidden text-gray-700 animate-pulse-slow">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Breaking News Banner -->
-    <div class="breaking-news bg-red-500 text-white py-2">
+    <div class="breaking-news text-white py-2">
         <div class="container mx-auto px-4">
-            <div class="flex items-center justify-center">
-                <span class="font-bold mr-4 animate-pulse">Berita Panas</span>
-                <marquee behavior="scroll" direction="left" class="text-sm">
-                    Jurnalistik digital bersama tim jurnalistik SMA Petra 4 Sidoarjo
-                </marquee>
-            </div>
+            <marquee behavior="scroll" direction="left" class="text-sm font-bold">
+                Jurnalistik digital bersama tim jurnalistik SMA Petra 4 Sidoarjo - Menembus Batas Kreativitas di Era Digital!
+            </marquee>
         </div>
     </div>
 
-    <section id="news" class="py-16 bg-gray-50 animate-fadeInSection">
+    <section id="news" class="py-16">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Berita Terbaru</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Update Berita SMA Trafour</p>
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-2">Berita Terbaru</h2>
+                <div class="h-1 w-20 bg-purple-600 mx-auto"></div>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="newsGrid">
-                <!-- News Card 1 (Tidak dihilangkan) -->
-                <div class="news-card">
-                    <div class="relative">
-                        <img src="berita1.png.png" class="w-full h-48 object-cover">
-                        <span class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold category-badge">ELS DESAIN GRAFIS</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-3 text-gray-800">Menembus Batas Kreativitas</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Suasana di kelas ELS Desain Grafis tidak selalu kaku. Ada yang serius mengutak-atik desain, ada pula yang sesekali bermain game. Namun, justru dalam atmosfer santai itulah kreativitas siswa semakin tumbuh. ...</p>
-                        <div class="flex items-center justify-between mt-4">
-                            <span class="text-sm text-gray-500">23 Sept 2025</span>
-                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
-                        </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="newsGrid">
+                <div class="news-card border border-gray-100 shadow-sm">
+                    <img src="berita1.png.png" class="w-full h-40 object-cover" alt="Desain Grafis">
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-blue-600 uppercase">Desain Grafis</span>
+                        <h3 class="font-bold text-lg mt-2 leading-tight">Menembus Batas Kreativitas</h3>
+                        <p class="text-gray-600 text-xs mt-3">Suasana santai namun produktif di kelas ELS Desain Grafis...</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
                     </div>
                 </div>
-                <!-- News Card 2 (Tidak dihilangkan) -->
-                <div class="news-card">
-                    <div class="relative">
-                        <img src="berita3.png.png" class="w-full h-48 object-cover">
-                        <span class="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold category-badge">ELS COOKING</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-3 text-gray-800">Inovasi Mi Ayam ala Siswa ELS Cooking</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Memodifikasi resep secara mandiri untuk menemukan cita rasa yang menurut mereka paling pas di lidah. ...</p>
-                        <div class="flex items-center justify-between mt-4">
-                            <span class="text-sm text-gray-500">15 Oktober 2025</span>
-                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
-                        </div>
+
+                <div class="news-card border border-gray-100 shadow-sm">
+                    <img src="berita3.png.png" class="w-full h-40 object-cover" alt="Cooking">
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-orange-500 uppercase">ELS Cooking</span>
+                        <h3 class="font-bold text-lg mt-2 leading-tight">Inovasi Mi Ayam Siswa</h3>
+                        <p class="text-gray-600 text-xs mt-3">Modifikasi resep mandiri untuk cita rasa nusantara yang pas...</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
                     </div>
                 </div>
-                <!-- News Card 3 (Tidak dihilangkan) -->
-                <div class="news-card">
-                    <div class="relative">
-                        <img src="Makeup.png" class="w-full h-48 object-cover">
-                        <span class="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold category-badge">ELS MAKEUP</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-3 text-gray-800">EKSKUL MAKEUP: Sekolah, Skincare, Self-Confidence!</h3>
-                        <p class="text-gray-600 mb-4 text-sm">SMA Kristen Petra 4 Sidoarjo punya cara unik mendukung kreativitas siswanya. ...</p>
-                        <div class="flex items-center justify-between mt-4">
-                            <span class="text-sm text-gray-500">9 September 2025</span>
-                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
-                        </div>
+
+                <div class="news-card border border-gray-100 shadow-sm">
+                    <img src="Makeup.png" class="w-full h-40 object-cover" alt="Makeup">
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-pink-500 uppercase">ELS Makeup</span>
+                        <h3 class="font-bold text-lg mt-2 leading-tight">Self-Confidence di Sekolah</h3>
+                        <p class="text-gray-600 text-xs mt-3">Membangun kepercayaan diri melalui seni rias wajah...</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
                     </div>
                 </div>
-                <!-- News Card 4 (Tidak dihilangkan) -->
-                <div class="news-card">
-                    <div class="relative">
-                        <img src="jepang.png" class="w-full h-48 object-cover">
-                        <span class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold category-badge">ELS BAHASA JEPANG</span>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-3 text-gray-800">Bahasa Jepang sebagai Jembatan Masa Depan</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Bahasa Jepang merupakan salah satu bahasa asing yang memiliki daya tarik besar bagi generasi muda di berbagai belahan dunia. ...</p>
-                        <div class="flex items-center justify-between mt-4">
-                            <span class="text-sm text-gray-500">9 September 2025</span>
-                            <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="text-blue-600 hover:text-blue-800 text-sm font-semibold">→</a>
-                        </div>
+
+                <div class="news-card border border-gray-100 shadow-sm">
+                    <img src="jepang.png" class="w-full h-40 object-cover" alt="Jepang">
+                    <div class="p-5">
+                        <span class="text-xs font-bold text-red-600 uppercase">Bahasa Jepang</span>
+                        <h3 class="font-bold text-lg mt-2 leading-tight">Jembatan Masa Depan</h3>
+                        <p class="text-gray-600 text-xs mt-3">Mempelajari bahasa dan budaya Sakura untuk karir global...</p>
+                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Comment Section -->
-    <section id="comments" class="py-16 bg-purple-50 animate-fadeInSection">
+    <section id="comments" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Tinggalkan Komentar</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-                <form id="commentForm">
+            <div class="max-w-2xl mx-auto bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-comments mr-3 text-purple-600"></i> Diskusi Siswa
+                </h2>
+                
+                <form id="commentForm" class="mb-10">
                     <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-medium mb-2">Nama</label>
-                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 animate-underline" placeholder="Nama Anda" required>
+                        <input type="text" id="name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all" placeholder="Nama Lengkap" required>
                     </div>
                     <div class="mb-4">
-                        <label for="comment" class="block text-gray-700 font-medium mb-2">Komentar</label>
-                        <textarea id="comment" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 animate-underline" placeholder="Tulis komentar Anda di sini..." required></textarea>
+                        <textarea id="comment" rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-500 outline-none transition-all" placeholder="Tulis komentar Anda..." required></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-purple-700 transition duration-300 animate-pulse-on-hover">Kirim Komentar</button>
+                    <button type="submit" class="w-full bg-purple-600 text-white font-bold py-3 rounded-xl hover:bg-purple-700 transform transition active:scale-95 shadow-lg">
+                        Kirim Komentar
+                    </button>
                 </form>
-                <div id="commentsList" class="mt-8">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Daftar Komentar</h3>
+
+                <div id="commentsList" class="space-y-4">
+                    <p class="text-center text-gray-400 text-sm">Memuat komentar...</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-gray-900 text-white py-12 animate-fadeInSection">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-4 animate-fadeIn">Ikuti Kami</h2>
-            <p class="text-gray-400 mb-8 animate-fadeIn">Terhubung dengan kami melalui media sosial.</p>
-            <div class="flex justify-center items-center space-x-6 animate-fadeIn">
-                <a href="https://wa.me/yourphonenumber" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
-                    <i class="fab fa-whatsapp text-2xl mr-2"></i>
-                    <span class="font-medium">WhatsApp</span>
-                </a>
-                <a href="https://www.instagram.com/digicomtrapat/" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
-                    <i class="fab fa-instagram text-2xl mr-2"></i>
-                    <span class="font-medium">Instagram</span>
-                </a>
-                <a href="https://tiktok.com/@yourprofile" target="_blank" class="flex items-center text-white transition duration-300 rounded-lg px-4 py-2 social-btn-gradient">
-                    <i class="fab fa-tiktok text-2xl mr-2"></i>
-                    <span class="font-medium">TikTok</span>
-                </a>
+            <div class="flex justify-center space-x-4 mb-6">
+                <a href="#" class="social-btn-gradient p-3 rounded-full w-12 h-12 flex items-center justify-center"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/digicomtrapat/" class="social-btn-gradient p-3 rounded-full w-12 h-12 flex items-center justify-center"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn-gradient p-3 rounded-full w-12 h-12 flex items-center justify-center"><i class="fab fa-tiktok"></i></a>
             </div>
-            <div class="border-t border-gray-700 mt-10 pt-6 animate-fadeIn">
-                <p class="text-gray-500 text-sm">&copy; 2025 Tim Jurnalistik SMA Petra 4 Sidoarjo. All Rights Reserved.</p>
-            </div>
+            <p class="text-gray-500 text-sm">&copy; 2025 Tim Jurnalistik SMA Petra 4 Sidoarjo.</p>
         </div>
     </footer>
 
-    <script>
-        const form = document.getElementById('commentForm');
-        const commentsList = document.getElementById('commentsList');
-        const serverUrl = 'http://localhost:3000';
+    <script type="module">
+        // Import Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const commentText = document.getElementById('comment').value;
-            try {
-                const response = await fetch(`${serverUrl}/comments`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name, comment: commentText }),
-                });
-                if (response.ok) {
-                    alert('Komentar berhasil dikirim!');
-                    form.reset();
-                    fetchComments();
-                } else {
-                    alert('Gagal mengirim komentar.');
+        // --- KONFIGURASI FIREBASE (GANTI DENGAN MILIK ANDA) ---
+        const firebaseConfig = {
+            apiKey: "AIzaSy...", 
+            authDomain: "project-anda.firebaseapp.com",
+            projectId: "project-anda",
+            storageBucket: "project-anda.appspot.com",
+            messagingSenderId: "123456789",
+            appId: "1:123456789:web:abcdef"
+        };
+
+        // Inisialisasi Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // --- 1. ANIMASI PARTIKEL INTERAKTIF ---
+        tsParticles.load("tsparticles", {
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: 800 } },
+                color: { value: ["#8B5CF6", "#3b82f6", "#EC4899"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.4 },
+                size: { value: { min: 1, max: 4 } },
+                links: { enable: true, distance: 150, color: "#8B5CF6", opacity: 0.2, width: 1 },
+                move: { enable: true, speed: 1.5, direction: "none", outModes: "out" }
+            },
+            interactivity: {
+                events: {
+                    onHover: { enable: true, mode: "grab" },
+                    onClick: { enable: true, mode: "push" }
+                },
+                modes: {
+                    grab: { distance: 200, links: { opacity: 0.5 } },
+                    push: { quantity: 4 }
                 }
-            } catch (error) {
-                console.error(error);
-                alert('Terjadi kesalahan.');
             }
         });
 
-        async function fetchComments() {
+        // --- 2. LOGIKA KOMENTAR FIREBASE ---
+        const form = document.getElementById('commentForm');
+        const commentsList = document.getElementById('commentsList');
+
+        // Simpan ke Firebase
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const text = document.getElementById('comment').value;
+
             try {
-                const response = await fetch(`${serverUrl}/comments`);
-                const comments = await response.json();
-                commentsList.innerHTML = '<h3 class="text-xl font-bold text-gray-800 mb-4">Daftar Komentar</h3>';
-                comments.forEach((item) => {
-                    const commentDiv = document.createElement('div');
-                    commentDiv.className = 'bg-gray-100 p-
+                await addDoc(collection(db, "comments"), {
+                    name: name,
+                    comment: text,
+                    timestamp: serverTimestamp()
+                });
+                form.reset();
+            } catch (e) {
+                console.error("Error: ", e);
+                alert("Gagal mengirim ke Firebase. Pastikan Config & Rules sudah benar.");
+            }
+        });
+
+        // Ambil Data Secara Real-time
+        const q = query(collection(db, "comments"), orderBy("timestamp", "desc"));
+        onSnapshot(q, (snapshot) => {
+            commentsList.innerHTML = "";
+            if (snapshot.empty) {
+                commentsList.innerHTML = '<p class="text-center text-gray-400 text-sm">Belum ada komentar.</p>';
+            }
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                const div = document.createElement('div');
+                div.className = "bg-gray-50 p-4 rounded-xl border border-gray-100 animate-fadeIn";
+                div.innerHTML = `
+                    <div class="flex items-center mb-1">
+                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-xs mr-2">
+                            ${data.name.charAt(0).toUpperCase()}
+                        </div>
+                        <h4 class="font-bold text-gray-800 text-sm">${data.name}</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm ml-10">${data.comment}</p>
+                `;
+                commentsList.appendChild(div);
+            });
+        });
+
+        // Fungsi Filter Berita
+        window.filterNews = function() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.getElementsByClassName('news-card');
+            for (let card of cards) {
+                let title = card.querySelector('h3').innerText.toLowerCase();
+                card.style.display = title.includes(input) ? "block" : "none";
+            }
+        };
+    </script>
+</body>
+
