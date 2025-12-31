@@ -117,7 +117,7 @@
                         <span class="text-xs font-bold text-blue-600 uppercase">Desain Grafis</span>
                         <h3 class="font-bold text-lg mt-2 leading-tight">Menembus Batas Kreativitas</h3>
                         <p class="text-gray-600 text-xs mt-3">Eksplorasi desain tanpa batas di SMA Petra 4...</p>
-                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
+                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
                     </div>
                 </div>
                 <div class="news-card border border-gray-100 shadow-sm">
@@ -126,7 +126,7 @@
                         <span class="text-xs font-bold text-orange-500 uppercase">ELS Cooking</span>
                         <h3 class="font-bold text-lg mt-2 leading-tight">Inovasi Mi Ayam Siswa</h3>
                         <p class="text-gray-600 text-xs mt-3">Kreasi kuliner sehat dan lezat karya siswa...</p>
-                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
+                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
                     </div>
                 </div>
                 <div class="news-card border border-gray-100 shadow-sm">
@@ -135,7 +135,7 @@
                         <span class="text-xs font-bold text-pink-500 uppercase">ELS Makeup</span>
                         <h3 class="font-bold text-lg mt-2 leading-tight">Seni Rias & Percaya Diri</h3>
                         <p class="text-gray-600 text-xs mt-3">Mengekspresikan diri melalui seni makeup wajah...</p>
-                        <a href="#" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
+                        <a href="https://share.google/5ts2tjQrj9KSaK2fw" class="inline-block mt-4 text-purple-600 font-bold text-sm">Baca Selengkapnya →</a>
                     </div>
                 </div>
                 <div class="news-card border border-gray-100 shadow-sm">
