@@ -187,12 +187,13 @@
 
         // --- KONFIGURASI FIREBASE (GANTI DENGAN MILIK ANDA) ---
         const firebaseConfig = {
-            apiKey: "AIzaSy...", 
-            authDomain: "project-anda.firebaseapp.com",
-            projectId: "project-anda",
-            storageBucket: "project-anda.appspot.com",
-            messagingSenderId: "123456789",
-            appId: "1:123456789:web:abcdef"
+            apiKey: "AIzaSyD3yFm25HY3GUrdTEBr9d-eLRbOkH8xnxc",
+            authDomain: "jurnal-sma-a4.firebaseapp.com",
+            projectId: "jurnal-sma-a4",
+            storageBucket: "jurnal-sma-a4.firebasestorage.app",
+            messagingSenderId: "701172220342",
+            appId: "1:701172220342:web:736bebf8fa6850376e4117",
+            measurementId: "G-C9ZGR3FLM8"
         };
 
         // Inisialisasi Firebase
